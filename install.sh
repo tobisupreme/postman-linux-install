@@ -9,7 +9,7 @@ local_bin_path="$HOME/.local/bin"
 local_application_path="$HOME/.local/share/applications"
 app_bin_in_local_bin="$local_bin_path/$app_name"
 desktop_in_local_applications="$local_application_path/$app_name.desktop"
-icon_path=$app_installation_directory/icons/icon_128x128.png
+icon_path=$app_installation_directory/resources/app/assets/icon.png
 executable_path=$app_installation_directory/Postman
 
 echo "Starting installation, method: Local Install"
@@ -77,7 +77,6 @@ echo "
 Name=Postman
 Keywords=API;http;json;web;
 Exec=$executable_path
-Icon=$HOME/$literal_name_of_installation_directory/postman/icons/icon_128x128.png
 Icon=$icon_path
 Terminal=false
 Type=Application
